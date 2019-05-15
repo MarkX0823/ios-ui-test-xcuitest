@@ -27,8 +27,8 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text accessible={true} accessibilityLabel="myText1" style={styles.welcome}>Welcome to React Native!</Text>
-        <Text {...{accessible: true, accessibilityLabel: "myText2"}} style={styles.instructions}>To get started, edit App.js</Text>
+        <Text testID="myText1" style={styles.welcome}>Welcome to React Native!</Text>
+        <Text {...{testID: "myText2"}} style={styles.instructions}>To get started, edit App.js</Text>
         <Text {...setTestID("myText3")} style={styles.instructions}>{instructions}</Text>
         <Text {...setTestID("myText4")} style={styles.test}>Test</Text>
         <TextInput
